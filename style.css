@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", "Noto Sans TC", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  background-color: #f6f7f8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 0.9;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  color: #666666;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+}
+
+.nav {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #fff;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-title {
+  color: #267b98;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 60px;
+  display: inline;
+}
+
+.nav-item {
+  margin: 1.4rem 0;
+  opacity: 0;
+}
+
+.nav-link {
+  color: #267b98;
+  font-weight: 700;
+}
+
+.navbar-toggle:checked ~ .nav {
+  transform: scale(1, 1);
+}
+
+.navbar-toggle:checked ~ .nav .nav-item {
+  opacity: 1;
+  transition: opacity .2s ease-out .15s;
+}
+
+.navbar-toggle-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 7.5%;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 30px;
+  height: 3px;
+  background-color: #267b98;
+}
+
+.hamburger::before,
+.hamburger::after {
+  position: absolute;
+  left: 0;
+  content: '';
+}
+
+.hamburger::before {
+  bottom: 8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+/* main */
+main {
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  padding-top: 92px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+#personal-info {
+  text-align: center;
+}
+
+.avatar-img {
+  width: 25%;
+  border-radius: 25px;
+}
+
+.name {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-media-link {
+  color: #999999;
+  margin: 0 5px;
+}
+
+.social-media-link:hover {
+  color: #267b98
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #267b98;
+}
+
+.description {
+  text-align: start;
+  font-weight: bold;
+}
+
+.skill-name {
+  border-top: 1px solid #999999;
+  padding-top: 16px;
+}
+
+.skill-description {
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  margin-top: 16px
+}
+
+hr {
+  border: 0px;
+  height: 1px;
+  background-color: #cccccc;
+  margin: 20px 0;
+}
+
+.company,
+.duration {
+  color: #666666;
+  margin-right: 16px;
+}
+
+.fa-building,
+.fa-calendar-alt {
+  margin-right: 5px;
+}
+
+.experience-item p {
+  margin-top: 8px;
+}
