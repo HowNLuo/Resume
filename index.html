@@ -11,7 +11,110 @@
 </head>
 
 <body>
+  <header>
+    <h2 class="nav-title">我的履歷表</h2>
+    <input type="checkbox" class="navbar-toggle" id="navbar-toggle">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#personal-info" class="nav-link">自我介紹</a></li>
+        <li class="nav-item"><a href="#skill-section" class="nav-link">專業技能</a></li>
+        <li class="nav-item"><a href="#experience-section" class="nav-link">工作經驗</a></li>
+      </ul>
+    </nav>
+    <label for="navbar-toggle" class="navbar-toggle-label">
+      <span class="hamburger"></span>
+    </label>
+  </header>
 
+  <main>
+    <section id="personal-info">
+      <div class="avatar">
+        <img class="avatar-img"
+          src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/239685054_4465232290166237_5623993458152570628_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=E46CTGkUuLwAX_OVlOk&_nc_ht=scontent.ftpe7-3.fna&oh=9635ae32079c87955b052799c29e1de4&oe=616158A1"
+          alt="avatar">
+      </div>
+      <div class="introduction">
+        <h1 class="name">羅浩恩</h1>
+        <div class="social-media">
+          <a class="social-media-link" href="https://www.facebook.com/profile.php?id=100000385306223" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="social-media-link" href="https://www.instagram.com/luohaoen1229/?hl=zh-tw" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="social-media-link" href="https://line.me/ti/p/0t-3nLcwLo" target="_blank">
+            <i class="fab fa-line"></i>
+          </a>
+          <a class="social-media-link" href="mailto:xji6cl4p@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <div class="title">
+          東吳大學 | 網頁前端工程師 | 台北台灣
+        </div>
+        <div class="description">
+          <p>
+            我是羅浩恩，畢業於東吳大學財務工程與精算數學系。於2021年3月開始接觸網頁前端設計，花費約半年的時間掌握前端技術；也對後端的作業、語法、以及API串接有一定程度的了解。<br>我希望短期內熟悉前端工程師的工作內容，並透過自學、查找資料提昇寫程式的能力，打造更具質感的排版設計，提高使用者體驗品質。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill-section">
+      <h2>專業技能</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3 class="skill-name">程式設計入門</h3>
+          <p class="skill-description">
+            具備網頁設計的能力，能夠製作使用者介面與線框圖繪製，熟悉HTML、CSS和JavaScript，並對於基礎的演算法有一定的掌握力。
+          </p>
+        </div>
+        <div class="skill">
+          <h3 class="skill-name">掌握網頁開發</h3>
+          <p class="skill-description">能夠打造兼具前後端的 Web App 產品。從網頁切版、RWD、操作 DOM 事件、使用 AJAX 與串接 API 等前端能力，到使用 Node.js 與
+            MongoDB建立後端功能，能夠深入瞭解網路應用程式運作的每個環節，並親手打造自己的產品。</p>
+        </div>
+        <div class="skill">
+          <h3 class="skill-name">軟體工程師實力</h3>
+          <p class="skill-description">
+            前端部分能夠透過前端框架建立 SPA 頁面，後端則能夠建置完整的登入系統、實作購物車與金流串接。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience-section">
+      <h2>工作經歷</h2>
+      <div class="experience">
+        <div class="experience-item">
+          <h3 class="job-title">行政助理</h3>
+          <span class="company"><i class="far fa-building"></i>玉山銀行</span>
+          <span class="duration"><i class="far fa-calendar-alt"></i>2020 年 4 月 - 2021 年 2 月</span>
+          <p>
+            協助基金交易，統整當日交易金額，確認無誤後將指定款項匯至正確的保管銀行。顧客來電時，協助其辦理各項信託業務，如信託繼承、信託憑證、歸戶等等… 回答問題並正確引導操作，以顧客利益最大化為優先，落實待客之道。
+          </p>
+        </div>
+        <hr>
+        <div class="experience-item">
+          <h3 class="job-title">保險業務員</h3>
+          <span class="company"><i class="far fa-building"></i>富邦人壽</span>
+          <span class="duration"><i class="far fa-calendar-alt"></i>2017 年 7 月 - 2017 年 9 月</span>
+          <p>
+            銷售各項保險產品，傾聽顧客的聲音，並用心瞭解其需求，按照顧客的需求及預算客製化保單，向其推薦最適合的商品。顧客於保險期間發生指定不可抗力之意外時，協助其進行理賠程序，並給予最大的關心。
+          </p>
+        </div>
+        <hr>
+        <div class="experience-item">
+          <h3 class="job-title">超商門市人員</h3>
+          <span class="company"><i class="far fa-building"></i>統一超商</span>
+          <span class="duration"><i class="far fa-calendar-alt"></i>2014 年 5 月 - 2015 年 11 月</span>
+          <p>
+            負責介紹及銷售門市商品，提供顧客之接待與需求服務。處理商品進貨入庫、銷售管理及庫存管理。整理商品包裝、陳列及促銷品換檔工作，維持店櫃周遭之整潔。
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
