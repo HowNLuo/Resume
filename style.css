@@ -221,3 +221,86 @@ hr {
 .experience-item p {
   margin-top: 8px;
 }
+
+@media screen and (min-width: 576px) {
+  h2 {
+    font-size: 40px
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+
+  p,
+  span,
+  .social-media-link {
+    font-size: 18px;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skill {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-toggle-label {
+    display: none;
+  }
+
+  .nav {
+    all: unset;
+    grid-column: 3/4;
+  }
+
+  .nav-item {
+    margin: 0;
+    opacity: 1;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  .nav-title {
+    grid-column: 2/3;
+  }
+
+  .nav-list {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #personal-info {
+    display: flex;
+  }
+
+  .avatar {
+    max-width: 250px;
+    margin: 0 80px;
+  }
+
+  .avatar-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .introduction {
+    width: 800px;
+  }
+}
