@@ -1,8 +1,6 @@
 <template>
   <div class="flex items-center justify-between h-[70px] bg-primary-500 fixed top-0 left-0 w-full shadow-lg">
-    <button to="home" class="text-white h-[50px] ml-10 text-2xl" @click="router.push('home')"
-      >浩恩的個人網頁</button
-    >
+    <button to="home" class="text-white h-[50px] ml-10 text-2xl" @click="router.push('home')">浩恩的個人網頁</button>
     <div class="flex gap-5 text-white p-10">
       <router-link
         class="w-[80px] h-[50px] leading-[50px] text-center text-lg rounded line"
@@ -19,8 +17,7 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
 
-
-const router = useRouter()
+const router = useRouter();
 const routes = [
   {
     index: '0',
@@ -37,11 +34,10 @@ const routes = [
     path: 'contact',
     name: '聯繫方式',
   },
-]
+];
 </script>
 
 <style scoped>
-
 .line {
   position: relative;
   overflow: hidden;
