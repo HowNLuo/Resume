@@ -3,7 +3,16 @@ import './style/index.scss'
 import App from './App.vue'
 import ElementPlus from 'element-plus'
 import { router } from './routes'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
-const app = createApp(App).use(router).use(ElementPlus)
+library.add(fas)
+library.add(far)
+library.add(fab)
+
+const app = createApp(App).use(router).use(ElementPlus).component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')
