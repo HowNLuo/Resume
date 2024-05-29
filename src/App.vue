@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <div class="bg-gray-100 h-screen pt-[90px]">
+  <div class="bg-gray-100 h-full pt-[90px]">
     <router-view />
   </div>
 </template>
