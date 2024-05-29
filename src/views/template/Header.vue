@@ -1,11 +1,11 @@
 <template>
-  <div class="flex items-center justify-between h-[90px] bg-primary-500 fixed top-0 left-0 w-full">
-    <button to="home" class="text-white h-[60px] ml-10 text-2xl" @click="router.push('home')"
+  <div class="flex items-center justify-between h-[70px] bg-primary-500 fixed top-0 left-0 w-full shadow-lg">
+    <button to="home" class="text-white h-[50px] ml-10 text-2xl" @click="router.push('home')"
       >浩恩的個人網頁</button
     >
     <div class="flex gap-5 text-white p-10">
       <router-link
-        class="w-[80px] h-[60px] leading-[60px] text-center text-lg rounded line"
+        class="w-[80px] h-[50px] leading-[50px] text-center text-lg rounded line"
         v-for="route in routes"
         activeClass="bg-primary-400"
         :to="route.path"
