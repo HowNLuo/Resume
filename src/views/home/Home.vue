@@ -17,6 +17,9 @@
           <a href="mailto:xji6cl4p@gmail.com" class="hover:text-primary-500">
             <font-awesome-icon :icon="['fas', 'envelope']" />
           </a>
+          <a href="https://github.com/HowNLuo" class="hover:text-primary-500">
+            <font-awesome-icon :icon="['fab', 'github']" />
+          </a>
         </div>
         <span class="text-primary-500 text-xl font-medium"> 東吳大學 | 網頁前端工程師 | 台北台灣 </span>
         <div class="text-gray-700 text-base tracking-wide font-medium">
