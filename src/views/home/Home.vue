@@ -128,7 +128,7 @@ const skills = [
         color: 'text-red-500',
       },
     ],
-    tags: ['Git', 'API', 'ESLint', 'Prettier'],
+    tags: ['Git', 'API', 'ESLint', 'Prettier', 'Jenkins'],
   },
 ];
 const experiences = [
