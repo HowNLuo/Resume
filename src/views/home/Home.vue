@@ -107,7 +107,7 @@ const skills = [
         color: 'text-primary-300',
       },
     ],
-    tags: ['Angular', 'Vue', 'React', 'TailwindCss', 'BootStrap', 'Element-UI', 'Webpack', 'Vite', 'SCSS', 'Cypress'],
+    tags: ['Angular', 'Vue', 'React', 'TailwindCss', 'BootStrap', 'Element-UI', 'Webpack', 'Vite', 'SCSS', 'Cypress', 'RxJS'],
   },
   {
     title: '其他重要技能',
